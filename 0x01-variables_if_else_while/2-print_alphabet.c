@@ -1,29 +1,21 @@
+/*
+ * File: 2-print_alphabet.c
+ * Auth: serge dja
+ */
+
 #include <stdio.h>
 
 /**
- * main - Prints the numbers from 00 to 99, numbers separated by
- *        a comma followed by a space, in ascending order.
+ * main - Prints the alphabet in lowercase.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int digit1, digit2;
+	char letter;
 
-	for (digit1 = 0; digit1 < 10; digit1++)
-	{
-		for (digit2 = 0; digit2 < 10; digit2++)
-		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 9 && digit2 == 9)
-				continue;
-			
-			putchar(',');
-			putchar(' ');
-		}
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
 	putchar('\n');
 
