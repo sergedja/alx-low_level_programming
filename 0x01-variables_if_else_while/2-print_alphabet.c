@@ -1,8 +1,3 @@
-/*
- * File: 10-print_comb2.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
 
 /**
