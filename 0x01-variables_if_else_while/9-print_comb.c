@@ -3,27 +3,32 @@
  * Auth: serge dja
  */
 
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
+ * main - Entry point
  *
- * Return: Always 0.
- */
+ * Description: print 0, 1, - 9
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	int num;
+	int digit = 0;
 
-	for (num = 0; num <= 9; num++)
+	while (digit <= 9)
 	{
-		putchar((num % 10) + '0');
-		if (num == 9)
-			continue;
-		
-		putchar(',');
-		putchar(' ');
-	}
+		putchar(digit + 48);
 
+		if (digit != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+
+		++digit;
+	}
 	putchar('\n');
 
 	return (0);
